@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/notkoutsie
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://idiotic.me
+  * I am notkoutsie (https://keybase.io/notkoutsie) on keybase.
+  * I have a public key ASCOM3J86sGXeOgBbd8PxR0Kxv5oWRkQk8UGcm4RGMJ4XQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208e33727ceac19778e8016ddf0fc51d0ac6fe6859191093c506726e1118c2785d0a",
+      "host": "keybase.io",
+      "kid": "01208e33727ceac19778e8016ddf0fc51d0ac6fe6859191093c506726e1118c2785d0a",
+      "uid": "39b125da4784e10160b84728833f4619",
+      "username": "notkoutsie"
+    },
+    "merkle_root": {
+      "ctime": 1574810176,
+      "hash": "e3edda1989af9da8aeadbb7fcaba93a3179b7dda91f274d692df79aa25369a2a01108518ca70bf7ce5766233cb4fbb821730d73152370c716d9b8224f6c3ef45",
+      "hash_meta": "cf567933569512f538cb940f9f7894617a4de7f1b918016768d79a77d17be621",
+      "seqno": 10994825
+    },
+    "service": {
+      "entropy": "T1eaiddpCatebcfpVY+srhZm",
+      "hostname": "idiotic.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1574810180,
+  "expire_in": 504576000,
+  "prev": "41830a377444d32b4dc84fd7010fcc989df06d2ca6de928546f5847c5b058026",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgjjNyfOrBl3joAW3fD8UdCsb+aFkZEJPFBnJuERjCeF0Kp3BheWxvYWTESpcCC8QgQYMKN3RE0ytNyE/XAQ/MmJ3wbSym3pKFRvWEfFsFgCbEIBYNw4DsGsLBbeBdV0Jea2t5wZApCCgXA5f2q1PUrZdoAgHCo3NpZ8RAcO1FQPlF07vwNEvay/jaGMSl9HNbxmS4ZJrD8IQgK5isnSbGY6lFV2RVekLaWTz+FfJbIVSqU+6MTrdLWbUvAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKO3VjL5aSRxBrFMjxOI9H0dtuuvDbUwmIS/B8K/ekzTo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/notkoutsie
+
+==================================================================
