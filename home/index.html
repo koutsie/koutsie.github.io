@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+@-ms-viewport{
+  width: device-width;
+}
+body {
+  font-family: monospace;
+  text-align: center;
+  background-color: #373737;
+ }
+ h2 {
+  font-family: monospace;
+  color: white;
+}
+
+h4 {
+  font-family: monospace;
+  color: white;
+}
+
+a:visited { color:#808080; }
+a:link { color:#808080; }
+}
+</style>
+<body onload="updateClock(); showWarning();">
+
+<iframe src="https://duckduckgo.com/search.html?width=500&duck=yes&bgcolor= 373737&focus=yes" style="overflow:hidden;margin:0;padding:0;width:633px;height:60px;" frameborder="0"></iframe>
+
+<br>
+<div id="time" style="display: inline"></div>
+
+<iframe id="wtr" src="https://wttr.in/~Oulu_t0_pqF_2.png" style="overflow:hidden;margin:0;padding:0;width:906px;height:406px;" frameborder="0"></iframe>
+</div>
+
+<script>
+function updateClock() {
+    var now = new Date(), // current date
+        months = ['...']; 
+        time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds(), // again, you get the idea
+
+    // set the content of the element with the ID time to the formatted string
+    document.getElementById('time').innerHTML = "<h4>" + time + "</h4>";
+
+    // call this function again in 1000ms
+    setTimeout(updateClock, 1000);
+}
+
+function showWarning() {
+  console.log("--- Hi, whats up? ---");
+  console.log("If you wanna paste this site;");
+  console.log("https://github.com/koutsie/koutsie.github.io");
+}
+</script>
+</body>
+</html>
