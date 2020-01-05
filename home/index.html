@@ -55,7 +55,7 @@ a:link { color:#808080; }
 function updateClock() {
     var now = new Date(), // current date
         months = ['...']; 
-        time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds(), // again, you get the idea
+        time = '[ ' +now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' ]', // again, you get the idea
 
     // set the content of the element with the ID time to the formatted string
     document.getElementById('time').innerHTML = "<h4>" + time + "</h4>";
