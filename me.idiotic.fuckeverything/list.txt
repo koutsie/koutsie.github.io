@@ -1,4 +1,3 @@
-com.facebook.android
 com.evenwell.DbgCfgTool
 com.evenwell.DbgCfgTool.overlay.base.s600ww
 com.evenwell.DbgCfgTool.overlay.base.s600id
@@ -77,3 +76,13 @@ com.evenwell.pandorasbox
 com.evenwell.UsageStatsLogReceiver.data.overlay.base.s600ww
 com.evenwell.UsageStatsLogReceiver.data.overlay.back.s600id
 com.evenwell.UsageStatsLogReceiver
+
+com.facebook.android
+com.facebook.services
+com.tracfone.generic.downloaderapp
+com.hancom.office.viewer
+com.facebook.katana
+com.facebook.orca
+com.facebook.system
+com.facebook.appmanager
+com.tracfine.wifiutility2
