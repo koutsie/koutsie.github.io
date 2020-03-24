@@ -14,7 +14,24 @@
 </center>
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
-  new Darkmode().showWidget();
+  
+  var options = {
+  bottom: '24px', // default: '32px'
+  right: '24px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '1.3s', // default: '0.3s'
+  mixColor: '#ffffff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#151515',  // default: '#100f2c'
+  buttonColorLight: '#fffff', // default: '#fff'
+  saveInCookies: true, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
 </script>
 
 </body>
