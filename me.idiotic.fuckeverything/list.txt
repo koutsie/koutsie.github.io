@@ -166,7 +166,7 @@ com.sec.readershub
 com.sec.spp.push
 com.sec.yosemite.phone
 com.skype.raider
-com.tracfine.wifiutility2
+com.tracfone.wifiutility2
 com.tracfone.generic.downloaderapp
 com.tripadvisor.tripadvisor
 com.vlingo.midas
