@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <title>[ Home ]</title>
-<meta name="description" content="Welcome home, user!">
-
-<!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Koutsie">
-<meta itemprop="description" content="Hello.">
-<meta itemprop="image" content="https://koutsie.github.io/hand.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Koutsie">
-<meta name="twitter:description" content="Home">
-<link rel="icon" href="https://cdn.l1nux.fun/aaaa.png" type="image/x-icon"/>
-<meta rel="me" name="https://mastodon.technology/@koutsie">
-<meta name="author" content="Koutsie">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  
+<meta name="description" content="It's an start.">
 </head>
 <style>
-@-ms-viewport{
-  width: device-width;
+html, body {
+	background-color: #000000; !important;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+	text-align: center;
 }
-body {
-  font-family: monospace;
-  text-align: center;
-  background-color: #373737;
- }
+
+::-webkit-scrollbar {
+  width: 0.56px;
+}
+
+::-webkit-scrollbar-track {
+  background: #373737 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #722A00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #48fd00;
+}
  h2 {
   font-family: monospace;
   color: white;
@@ -37,59 +41,80 @@ h4 {
   color: white;
 }
 
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1.3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 a:visited { color:#FFFFFF; }
 a:link { color:#808080; }
+
+#search {
+	position: relative;
+	margin: 3em auto;
+	width: 900;
+	padding: 0;
+	text-align: center;
+}
+#search input {
+	caret-color:#48fd00!important;
+	display: block;
+	outline: none;
+	border: none;
+	border: solid 1.88px #722A00 !important;
+	padding: 0.7em 1em;
+	border-radius: 1000000em;
+	background-color:#0f0f0fd2 !important;
+	font-family: monospace;
+	font-size: 1em;
+	font-size: 1em;
+	color: #2fb0fb !important;
+	margin: 0 auto;
+    width: 50%;
 }
 </style>
-<body onload="updateClock(); showWarning();">
+<body class="fadeIn">
 
-<br>
 <div id="time" style="display: inline"></div>
 
-<br>
-<img src=https://wttr.in/~Oulu_t255_pqF_2.png>
-  
-  
-  
-  
-<br>
-	<br>
-<a href="https://github.com/">[ github ]</a>
 
+	<img src=https://wttr.in/~Finland_t255_pqF_2.png>
+
+
+	<form id="search" action="https://duckduckgo.com/">
+		<input type="text" autofocus name="q" { this.form.submit(); }">
+</form>
+
+<a href="https://github.com/">[ github ]</a>
 <br>
 	<br>
-<a href="https://twitter.com/home">[ twitter ]</a>
+<a href="https://twitter.com/home">[ twitter ]</a>
  
 <br>
 	<br>
-<a href="https://dev.pinafore.social/">[ mastodon ]</a>
+<a href="https://dev.pinafore.social/">[ mastodon ]</a>
   
 <br>
 	<br>
-<a href="https://www.unknowncheats.me/forum/index.php">[ unknowncheats ]</a>
+<a href="https://www.unknowncheats.me/forum/index.php">[ unknowncheats ]</a>
   
 <br>
 	<br>
-<a href="https://www.youtube.com/">[ youtube ]</a>
-  
-  
-  
-  
-<br> 
-	<br> 
-<form method="post" action="https://thinkingabout.today/">
-  <!-- search      --> <input type="text" name="q" />
-  <!-- categories  --> <input type="hidden" name="categories" value="" />
-  <!-- language    --> <input type="hidden" name="lang" value="all" />
-  <!-- locale      --> <input type="hidden" name="locale" value="en" />
-  <!-- date filter --> <input type="hidden" name="time_range" value="month" />
-</form>
-<br>
-	
-<center>
+<a href="https://www.youtube.com/">[ youtube ]</a>
 
-	</center>	
-<br>
 <script>
 function updateClock() {
     var now = new Date(), // current date
@@ -104,9 +129,8 @@ function updateClock() {
 }
 
 function showWarning() {
-  console.log("--- Hi, whats up? ---");
-  console.log("If you wanna paste this site;");
-  console.log("https://github.com/koutsie/koutsie.github.io");
+  console.log("I simulated suicide many times. When it works, simulation ends.");
+  console.log("- Unknown ");
 }
 </script>
 </body>
