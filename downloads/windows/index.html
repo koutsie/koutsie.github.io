@@ -1,44 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>[ Home ]</title>
-<meta name="description" content="It's an start.">
-</head>
+<title>[ Windows downloads! ]</title>
+<meta name="description" content="Download windows software.">
 <style>
-.btn {
-  background: #ff8400;
-  background-image: -webkit-linear-gradient(top, #ff8400, #cc00ff);
-  background-image: -moz-linear-gradient(top, #ff8400, #cc00ff);
-  background-image: -ms-linear-gradient(top, #ff8400, #cc00ff);
-  background-image: -o-linear-gradient(top, #ff8400, #cc00ff);
-  background-image: linear-gradient(to bottom, #ff8400, #cc00ff);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  text-shadow: 2px 3px 0px #666666;
-  -webkit-box-shadow: 2px 3px 0px #666666;
-  -moz-box-shadow: 2px 3px 0px #666666;
-  box-shadow: 2px 3px 0px #666666;
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 24px;
-  padding: 16px;
-  text-decoration: none;
-  max-width: 150px;
-}
-
-.btn:hover {
-  background: #ff1100;
-  background-image: -webkit-linear-gradient(top, #ff1100, #f200ff);
-  background-image: -moz-linear-gradient(top, #ff1100, #f200ff);
-  background-image: -ms-linear-gradient(top, #ff1100, #f200ff);
-  background-image: -o-linear-gradient(top, #ff1100, #f200ff);
-  background-image: linear-gradient(to bottom, #ff1100, #f200ff);
-  text-decoration: none;
-}
-
 html, body {
-	background-color: #000000; !important;
+    background-repeat: repeat;
+	background-color: #000000; 
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -46,6 +14,8 @@ html, body {
 	margin: 0;
 	font-family: monospace;
 	text-align: center;
+    background-image: url("https://koutsie.github.io/downloads/bg.png"); 
+
 }
 
 ::-webkit-scrollbar {
@@ -62,6 +32,9 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #48fd00;
+}
+a {
+  text-decoration: none !important;
 }
  h2 {
   font-family: monospace;
@@ -89,36 +62,60 @@ h4 {
     opacity: 1;
   }
 }
-
-
 a:visited { color:#FFFFFF; }
 a:link { color:#808080; }
 
-</style>
-<body class="fadeIn">
-
-<div id="time" style="display: inline"></div>
-<br>
-<img src="https://koutsie.github.io/downloads/windows.gif" alt="Windows Logo" style="width:128px;height:128px;>
-<br>
-<div class="btn">
-Download BruhInjector
-</div>
-Here shall be dragons.
-
-<script>
-function updateClock() {
-    var now = new Date(), // current date
-        months = ['...']; 
-        time = '[ ' +now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' ]', // again, you get the idea
-
-    // set the content of the element with the ID time to the formatted string
-    document.getElementById('time').innerHTML = "<h4>" + time + "</h4>";
-
-    // call this function again in 1000ms
-    setTimeout(updateClock, 1000);
+.btn {
+  background: #ff8400;
+  background-image: -webkit-linear-gradient(top, #ff8400, #cc00ff);
+  background-image: -moz-linear-gradient(top, #ff8400, #cc00ff);
+  background-image: -ms-linear-gradient(top, #ff8400, #cc00ff);
+  background-image: -o-linear-gradient(top, #ff8400, #cc00ff);
+  background-image: linear-gradient(to bottom, #ff8400, #cc00ff);
+  -webkit-border-radius: 40;
+  -moz-border-radius: 40;
+  border-radius: 40px;
+  text-shadow: 2px 3px 0px #666666;
+  -webkit-box-shadow: 2px 3px 0px #666666;
+  -moz-box-shadow: 2px 3px 0px #666666;
+  box-shadow: 2px 3px 0px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 5px;
+  text-decoration: none !important;
+  max-width: 40%;
 }
 
+.btn:hover {
+  background: #ff1100;
+  background-image: -webkit-linear-gradient(top, #ff1100, #f200ff);
+  background-image: -moz-linear-gradient(top, #ff1100, #f200ff);
+  background-image: -ms-linear-gradient(top, #ff1100, #f200ff);
+  background-image: -o-linear-gradient(top, #ff1100, #f200ff);
+  background-image: linear-gradient(to bottom, #ff1100, #f200ff);
+  text-decoration: none !important;
+}
+
+</style>
+</head>
+
+<body class="fadeIn">
+<br>
+<img src="https://koutsie.github.io/downloads/windows.gif" alt="Windows Logo" style="width:128px;height:128px;">
+<br>
+<center>
+<div class="btn">
+<a href="https://github.com/koutsie/BruhInjector">Download BruhInjector</a>
+</center>
+</div>
+<p>
+BruhInjector is an 32bit DLL injector.
+</p>
+<img src="https://koutsie.github.io/downloads/line.gif" alt="Windows Logo">
+<br>
+<p>Page last updated: 30.12.2020</p>
+<script>
 function showWarning() {
   console.log("I simulated suicide many times. When it works, simulation ends.");
   console.log("- Unknown ");
