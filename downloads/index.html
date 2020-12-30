@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>[ Home ]</title>
+<meta name="description" content="It's an start.">
+</head>
+<style>
+html, body {
+	background-color: #000000; !important;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+	text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 0.56px;
+}
+
+::-webkit-scrollbar-track {
+  background: #373737 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #722A00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #48fd00;
+}
+ h2 {
+  font-family: monospace;
+  color: white;
+}
+
+h4 {
+  font-family: monospace;
+  color: white;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1.3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+a:visited { color:#FFFFFF; }
+a:link { color:#808080; }
+
+</style>
+<body class="fadeIn">
+
+<div id="time" style="display: inline"></div>
+
+
+<a href="https://koutsie.github.io/downloads/windows/">[ windows stuff ]</a>
+
+<script>
+function updateClock() {
+    var now = new Date(), // current date
+        months = ['...']; 
+        time = '[ ' +now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' ]', // again, you get the idea
+
+    // set the content of the element with the ID time to the formatted string
+    document.getElementById('time').innerHTML = "<h4>" + time + "</h4>";
+
+    // call this function again in 1000ms
+    setTimeout(updateClock, 1000);
+}
+
+function showWarning() {
+  console.log("I simulated suicide many times. When it works, simulation ends.");
+  console.log("- Unknown ");
+}
+</script>
+</body>
+</html>
