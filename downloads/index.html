@@ -3,10 +3,10 @@
 <head>
 <title>[ Home ]</title>
 <meta name="description" content="It's an start.">
-</head>
 <style>
 html, body {
-	background-color: #000000; !important;
+    color: white;
+	background-color: #3B6EA5; !important;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -57,33 +57,17 @@ h4 {
     opacity: 1;
   }
 }
-
-
 a:visited { color:#FFFFFF; }
 a:link { color:#808080; }
-
 </style>
-<body class="fadeIn">
+</head>
 
-<div id="time" style="display: inline"></div>
-						 </br>
-<img src="windows.gif" alt="Windows Logo" style="width:128px;height:128px;>
-						 </br>
+<body class="fadeIn">
+<img src="https://koutsie.github.io/downloads/windows.gif" alt="Windows Logo" style="width:128px;height:128px;">
+<br>
 <a href="https://koutsie.github.io/downloads/windows/">[ windows stuff ]</a>
 
 <script>
-function updateClock() {
-    var now = new Date(), // current date
-        months = ['...']; 
-        time = '[ ' +now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' ]', // again, you get the idea
-
-    // set the content of the element with the ID time to the formatted string
-    document.getElementById('time').innerHTML = "<h4>" + time + "</h4>";
-
-    // call this function again in 1000ms
-    setTimeout(updateClock, 1000);
-}
-
 function showWarning() {
   console.log("I simulated suicide many times. When it works, simulation ends.");
   console.log("- Unknown ");
