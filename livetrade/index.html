@@ -1,6 +1,7 @@
-<head>
+<!DOCTYPE html> 
+<html><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&amp;display=swap" rel="stylesheet">
 <style>
 body {
   background-color: #343546;
@@ -20,10 +21,42 @@ a:visited {
 }
 </style>
 </head>
-<body>
-<h1><span style="color:#f2a900">Ƀ</span>itcoin Livetrade</h1>
-<video width="1200" src="https://ff6e33dce4eb.ngrok.io" autoplay type="video/ogg; codecs=theora"></video>
+<body> 
+
+
+
+<span id='videoDetecc'
+        style="display:none">
+        <h1><span style="color:#f2a900">Ƀ</span>itcoin Livetrade</h1>
+<video id="LiveTrade" width="1000" controls autoplay>
+  <source src="https://ff6e33dce4eb.ngrok.io/" type="video/ogg">
+</video>
+</span>
+
+<span id='videoNodetecc'>
+<img src="https://koutsie.github.io/livetrade/offline.png" width="1000">
+<br>
+</span>
+<span id='infos'
+        style="display:none">
 <h4>Right now running simulation phaze.</h4>
-<h5>Now with jazz!</h5>
-<h6><a href="https://twitter.com/notkoutsie">Twitter</a></h6>
-</body>
+<p>Updates:</p>
+<blockquote>
+- Now with jazz!<p>
+- Opensourced streaming framework!
+</blockquote>
+</span>
+<h6>Updates via <a href="https://twitter.com/notkoutsie">Twitter</a></h6>
+<script>
+var vid = document.getElementById("LiveTrade");
+vid.oncanplay = function() {
+  var infos = document.getElementById('infos');
+  infos.style.display = "";
+  var novid = document.getElementById('videoNodetecc');
+  novid.style.display = "none";
+  var video = document.getElementById('videoDetecc');
+  video.style.display = "";
+};
+</script> 
+</body> 
+</html>
