@@ -1,0 +1,29 @@
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Orange_Pi__General_SoC_Notes_0"></a>Orange Pi / General SoC Notes</h1>
+<h3 class="code-line" data-line-start=4 data-line-end=5 ><a id="Ilitek_SPI_display_4"></a>Ilitek SPI display:</h3>
+<p class="has-line-data" data-line-start="5" data-line-end="6">ili9486: Needs testing, XINIT errors out after init for err: “NO_DISPLAY” even thought we get <em>some</em> output.</p>
+<hr>
+<h4 class="code-line" data-line-start=9 data-line-end=10 ><a id="GPIO_Pinouts_9"></a>GPIO Pinouts</h4>
+<pre><code class="has-line-data" data-line-start="12" data-line-end="36" class="language-c"><span class="hljs-preprocessor"># ╔══════════════════════════════════════════════════════════════════════════════════════╗</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">2</span>x20 GPIO Header of the Xunlong Orange Pi One                                        ║</span>
+<span class="hljs-preprocessor"># ╠════╦══════════════════════════════════════╦════╦═════════════════════════════════════╣</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">1</span>  ║ <span class="hljs-number">3.3</span>V                                 ║  <span class="hljs-number">2</span> ║ <span class="hljs-number">5</span>V                                  ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">3</span>  ║ PA12 (TWI0_SDA/DI_RX/PA_EINT12)      ║  <span class="hljs-number">4</span> ║ <span class="hljs-number">5</span>V                                  ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">5</span>  ║ PA11 (TWI0_SCK/DI_TX/PA_EINT11)      ║  <span class="hljs-number">6</span> ║ GND                                 ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">7</span>  ║ PA6 (SIM_PWREN/PWM1/PA_EINT6)        ║  <span class="hljs-number">8</span> ║ PA13 (SPI1_CS/UART3_TX/PA_EINT13)   ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">9</span>  ║ GND                                  ║ <span class="hljs-number">10</span> ║ PA14 (SPI1_CLK/UART3_RX/PA_EINT14)  ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">11</span> ║ PA1 (UART2_RX/JTAG_CK/PA_EINT1)      ║ <span class="hljs-number">12</span> ║ PD14                                ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">13</span> ║ PA0 (UART2_TX/JTAG_MS/PA_EINT0)      ║ <span class="hljs-number">14</span> ║ GND                                 ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">15</span> ║ PA3 (UART2_CTS/JTAG_DI/PA_EINT3)     ║ <span class="hljs-number">16</span> ║ PC4                                 ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">17</span> ║ <span class="hljs-number">3.3</span>V                                 ║ <span class="hljs-number">18</span> ║ PC7                                 ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">19</span> ║ PC0 (SPI0_MOSI)                      ║ <span class="hljs-number">20</span> ║ GND                                 ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">21</span> ║ PC1 (SPI0_MISO)                      ║ <span class="hljs-number">22</span> ║ PA2 (UART2_RTS/JTAG_DO/PA_EINT2)    ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">23</span> ║ PC2 (SPI0_CLK)                       ║ <span class="hljs-number">24</span> ║ PC3 (SPI0_CS)                       ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">25</span> ║ GND                                  ║ <span class="hljs-number">26</span> ║ PA21 (PCM0_DIN/SIM_VPPPP/PA_EINT21) ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">27</span> ║ PA19 (PCM0_CLK/TWI1_SDA/PA_EINT19)   ║ <span class="hljs-number">28</span> ║ PA18 (PCM0_SYNC/TWI1_SCK/PA_EINT18) ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">29</span> ║ PA7 (SIM_CLK/PA_EINT7)               ║ <span class="hljs-number">30</span> ║ GND                                 ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">31</span> ║ PA8 (SIM_DATA/PA_EINT8)              ║ <span class="hljs-number">32</span> ║ PG8 (UART1_RTS/PG_EINT8)            ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">33</span> ║ PA9 (SIM_RST/PA_EINT9)               ║ <span class="hljs-number">34</span> ║ GND                                 ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">35</span> ║ PA10 (SIM_DET/PA_EINT10)             ║ <span class="hljs-number">36</span> ║ PG9 (UART1_CTS/PG_EINT9)            ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">37</span> ║ PA20 (PCM0_DOUT/SIM_VPPEN/PA_EINT20) ║ <span class="hljs-number">38</span> ║ PG6 (UART1_TX/PG_EINT6)             ║</span>
+<span class="hljs-preprocessor"># ║ <span class="hljs-number">39</span> ║ GND                                  ║ <span class="hljs-number">40</span> ║ PG7 (UART1_RX/PG_EINT7)             ║</span>
+<span class="hljs-preprocessor"># ╚════╩══════════════════════════════════════╩════╩═════════════════════════════════════╝</span></code></pre>
