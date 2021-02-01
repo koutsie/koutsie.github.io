@@ -23,6 +23,8 @@
 <ol class="generatedList"> 
 <h1> Livestream playlist</h1>
 <h5> The playlist is shuffled</h2>
+<div id="twitch-embed"></div>
+
     <li>01 Adrenaline Horror.mp3 </li>
     <li>01 Ben Briggs, PrototypeRaptor - Rolling Start! (Daytona USA).mp3 </li>
     <li>01 Hazardous Environments.mp3 </li>
@@ -227,6 +229,12 @@
     <li>HedgehogHeaven_21_Richter_BringInTheMachine.mp3 </li>
     <li>HedgehogHeaven_22_DCT_IsThisTheEnd.mp3 </li>
 </ol>
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "koutsie"
+  });
+</script>
 </body>
 </html>
