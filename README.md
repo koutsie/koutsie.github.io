@@ -1,4 +1,4 @@
-# Koutsie's Homepage 🇭
+# Koutsie's Homepage (And lots of other stuff).
 
 My current homepage (available @ https://koutsie.github.io/) and lots of other stuff. <br />
 
