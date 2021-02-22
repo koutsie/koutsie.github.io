@@ -6,6 +6,8 @@
 ### FreeBrowser (GFW circumvention app)
 **https://koutsie.vlx.red/wikimirror/apk/red.vlx.koutsie.a8c1ff3.apk**
 
+Hash / 杂凑: `e5b151b7ce156de279f15f5ae392d89d`
+Virustotal scan / virustotal扫描: ***https://www.virustotal.com/gui/file/8466588b3d77abd5b19c5ffbbc4cd36f95e505fad3386323b0dc7d2cfd23aa58/detection***
 
 ## 如果您想添加文件，请通过Tox与我联系。
 ToxID: `DFBFE450E11A597C626582C8025FC8897452CA42ADC09267E9D1906B4102976A8FBE3F5D3774`
