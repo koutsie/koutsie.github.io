@@ -13,6 +13,12 @@ ToxID: `DFBFE450E11A597C626582C8025FC8897452CA42ADC09267E9D1906B4102976A8FBE3F5D
 ℹ ️If you can, please use PGP.
 > Tox download
 https://f-droid.org/en/packages/ltd.evilcorp.atox/
+
+# 多种语言 / Multilingual
+#### China Dictatorship 中国独裁统治
+https://koutsie.vlx.red/wikimirror/kirosan/ 
+
+
 # Chinese
 https://koutsie.vlx.red/wikimirror/中华人民共和国审查制度.pdf
 https://koutsie.vlx.red/wikimirror/中华人民共和国网络审查.pdf
