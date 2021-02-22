@@ -19,7 +19,7 @@ https://f-droid.org/en/packages/ltd.evilcorp.atox/
 https://koutsie.vlx.red/wikimirror/kirosan/ 
 
 
-# Chinese
+# 中文
 https://koutsie.vlx.red/wikimirror/中华人民共和国审查制度.pdf
 https://koutsie.vlx.red/wikimirror/中华人民共和国网络审查.pdf
 https://koutsie.vlx.red/wikimirror/2019冠狀病毒病疫情時間軸.pdf 
