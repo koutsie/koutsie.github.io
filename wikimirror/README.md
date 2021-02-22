@@ -1,6 +1,8 @@
 # 指向以下镜像页面的链接列表（英文/中文）
 #####  List of links to mirrored pages below (EN/CN)
 
+* [PGP](#pgp)
+
 ### FreeBrowser（GFW规避应用程序）
 **https://koutsie.vlx.red/wikimirror/apk/red.vlx.koutsie.a8c1ff3.apk**
 ### FreeBrowser (GFW circumvention app)
@@ -42,6 +44,7 @@ https://koutsie.vlx.red/wikimirror/Internet_censorship_in_China.pdf
 https://koutsie.vlx.red/wikimirror/Timeline_of_the_COVID-19_pandemic_in_January_2020.pdf
 
 
+<span id="pgp"><span>
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
