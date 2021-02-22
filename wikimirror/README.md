@@ -4,12 +4,15 @@
 ## 如果您想添加文件，请通过Tox与我联系。
 ToxID: `DFBFE450E11A597C626582C8025FC8897452CA42ADC09267E9D1906B4102976A8FBE3F5D3774`
 ℹ️ 如果可以，请使用PGP。
-## 请注意，我不会说中文。
+**请注意，我不会说中文。**
+>Tox 下载
+https://f-droid.org/en/packages/ltd.evilcorp.atox/
 
 ##### If you want to add files, please contact me via Tox.
 ToxID: `DFBFE450E11A597C626582C8025FC8897452CA42ADC09267E9D1906B4102976A8FBE3F5D3774`
 ℹ ️If you can, please use PGP.
-
+> Tox download
+https://f-droid.org/en/packages/ltd.evilcorp.atox/
 # Chinese
 https://koutsie.vlx.red/wikimirror/中华人民共和国审查制度.pdf
 https://koutsie.vlx.red/wikimirror/中华人民共和国网络审查.pdf
