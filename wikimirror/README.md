@@ -3,16 +3,9 @@
 
 * [PGP](#pgp)
 
-### FreeBrowser（GFW规避应用程序）
-**https://koutsie.vlx.red/wikimirror/apk/red.vlx.koutsie.a8c1ff3.apk**
-### FreeBrowser (GFW circumvention app)
-**https://koutsie.vlx.red/wikimirror/apk/red.vlx.koutsie.a8c1ff3.apk**
-
-Hash / 杂凑: `e5b151b7ce156de279f15f5ae392d89d`
-Virustotal scan / virustotal扫描: ***https://www.virustotal.com/gui/file/8466588b3d77abd5b19c5ffbbc4cd36f95e505fad3386323b0dc7d2cfd23aa58/detection***
 
 ## 如果您想添加文件，请通过Tox与我联系。
-ToxID: `DFBFE450E11A597C626582C8025FC8897452CA42ADC09267E9D1906B4102976A8FBE3F5D3774`
+ToxID: `0E5F4D830B4352388EFD9ACFABD8A9AD6768E1C3D6AB64D71690BAC9EDFD441456F8486C2313`
 ℹ️ 如果可以，请使用PGP。
 **请注意，我不会说中文。**
 >Tox 下载
@@ -43,6 +36,15 @@ https://koutsie.vlx.red/wikimirror/Censorship_in_China.pdf
 https://koutsie.vlx.red/wikimirror/Internet_censorship_in_China.pdf
 https://koutsie.vlx.red/wikimirror/Timeline_of_the_COVID-19_pandemic_in_January_2020.pdf
 
+
+
+~~### FreeBrowser（GFW规避应用程序）~~
+~~**https://koutsie.vlx.red/wikimirror/apk/red.vlx.koutsie.a8c1ff3.apk**~~
+~~### FreeBrowser (GFW circumvention app)~~
+~~**https://koutsie.vlx.red/wikimirror/apk/red.vlx.koutsie.a8c1ff3.apk**~~
+
+~~Hash / 杂凑: `e5b151b7ce156de279f15f5ae392d89d`~~
+~~Virustotal scan / virustotal扫描: ***https://www.virustotal.com/gui/file/8466588b3d77abd5b19c5ffbbc4cd36f95e505fad3386323b0dc7d2cfd23aa58/detection***~~
 
 <span id="pgp"><span>
 
