@@ -88,9 +88,6 @@ a:link { color:#808080; }
 </style>
 <body class="fadeIn">
 
-<div id="time" style="display: inline"></div>
-
-
 	<img src=https://wttr.in/~Finland_t255_pqF_2.png>
 
 
@@ -115,23 +112,5 @@ a:link { color:#808080; }
 	<br>
 <a href="https://www.youtube.com/">[ youtube ]</a>
 
-<script>
-function updateClock() {
-    var now = new Date(), // current date
-        months = ['...']; 
-        time = '[ ' +now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' ]', // again, you get the idea
-
-    // set the content of the element with the ID time to the formatted string
-    document.getElementById('time').innerHTML = "<h4>" + time + "</h4>";
-
-    // call this function again in 1000ms
-    setTimeout(updateClock, 1000);
-}
-
-function showWarning() {
-  console.log("I simulated suicide many times. When it works, simulation ends.");
-  console.log("- Unknown ");
-}
-</script>
 </body>
 </html>
