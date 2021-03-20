@@ -13,7 +13,7 @@ https://f-droid.org/en/packages/ltd.evilcorp.atox/
 
 
 ##### If you want to add files, please contact me via Tox.
-ToxID: `DFBFE450E11A597C626582C8025FC8897452CA42ADC09267E9D1906B4102976A8FBE3F5D3774`
+ToxID: `0E5F4D830B4352388EFD9ACFABD8A9AD6768E1C3D6AB64D71690BAC9EDFD441456F8486C2313`
 ℹ ️If you can, please use PGP.
 > Tox download
 https://f-droid.org/en/packages/ltd.evilcorp.atox/
