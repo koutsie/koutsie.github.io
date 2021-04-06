@@ -1,5 +1,8 @@
 # Koutsie's Homepage (And lots of other stuff).
 
+[![Hits-of-Code](https://hitsofcode.com/github/koutsie/koutsie.github.io)](https://hitsofcode.com/github/koutsie/koutsie.github.io/view)
+
+
 My current homepage (available @ https://koutsie.github.io/) and lots of other stuff. <br />
 ![screenshotofthhepage](screenshot.png)
 
