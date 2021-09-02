@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GlassMC</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: monospace;
+            color: #C6723A;
+            background-color: #1E1E20;
+            display: none;
+            text-align: center;
+            
+        }
+    </style>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let url = "135.181.182.185:30010";
+        $(document).ready(() => {
+            $.getJSON("https://api.mcsrvstat.us/2/" + url, (status) => {
+                if (status.debug.ping) {
+                    $("#motd").append(status.motd.html);
+                    $("#status").append("Online");
+                    $("#version").append(status.version);
+                    $("#software").append(status.software + " | ");
+                    $("#protocol").append(status.protocol + " @");
+                    $("#players_num").append(status.players.online + "/" + status.players.max)
+                    $.each(status.players.list, function (index, player) {
+                        $("#players_list").append(player + "<br>")
+                    });
+					var img = document.createElement("img");
+					img.src = status.icon;
+					var src = document.getElementById("icondata");
+					src.appendChild(img);
+                } else {
+                    $("#motd").append(status.hostname);
+                    $("#status").append("Offline");
+                    $("#version").hide();
+                    $("#software").hide();
+                    $("#players_num").hide();
+                    $("#players_list").hide();
+                }
+                $("body").fadeIn(1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a id="icondata"></a>
+    <h1 id="motd"></h1>
+    <p id="status">Status: </p>
+    <p id="version"></a>  <a id="protocol">Protocol </a> <a id="software"></a></p>
+    <a id="players_list">Currently online: <br><a id="players_num"></a></a>
+</body>
+
+</html>
