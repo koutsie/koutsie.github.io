@@ -7,11 +7,28 @@
     <style>
         body {
             font-family: monospace;
-            color: #C6723A;
             background-color: #1E1E20;
             display: none;
             text-align: center;
+            color: #C6723A;
             
+        }
+        img {
+          animation: rotation 8s infinite ease-in-out;
+        }
+        @keyframes rotation {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
+        }
+        @keyframes rotation {
+          0%     { transform: rotate(0deg); }
+          5.51% { transform: rotate(0deg); }
+          75%   { transform: rotate(0deg); }
+          100%   { transform: rotate(-720deg); }
         }
     </style>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,7 +37,6 @@
         $(document).ready(() => {
             $.getJSON("https://api.mcsrvstat.us/2/" + url, (status) => {
                 if (status.debug.ping) {
-                    $("#motd").append(status.motd.html);
                     $("#status").append("Online");
                     $("#version").append(status.version);
                     $("#software").append(status.software + " | ");
@@ -49,7 +65,7 @@
 
 <body>
     <a id="icondata"></a>
-    <h1 id="motd"></h1>
+    <h1 id="motd"><span style="color: #FFAA00">Glass</span><span style="color: #FFFFFF">MC</span></h1>
     <p id="status">Status: </p>
     <p id="version"></a>  <a id="protocol">Protocol </a> <a id="software"></a></p>
     <a id="players_list">Currently online: <br><a id="players_num"></a></a>
