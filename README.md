@@ -1,7 +1,8 @@
 # Koutsie's Homepage (And lots of other stuff).
 
 [![Hits-of-Code](https://hitsofcode.com/github/koutsie/koutsie.github.io)](https://hitsofcode.com/github/koutsie/koutsie.github.io/view)
-
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/koutsie.github.io?publish)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/koutsie/koutsie.github.io/master)
 
 My current homepage (available @ https://koutsie.github.io/) and lots of other stuff. <br />
 ![screenshotofthhepage](screenshot.png)
