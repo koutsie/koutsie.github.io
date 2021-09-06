@@ -11,14 +11,15 @@
             display: none;
             text-align: center;
             color: #C6723A;
-            
         }
         img {
-          animation: fade 8s infinite ease-in-out;
+          animation: fade 3s infinite ease-in-out;
         }
 	@keyframes fade {
 	   0% {opacity: 1;}
-	   100% {opacity: 0;} 
+	   50% {opacity: 0;} 
+       80% {opacity: 1;} 
+       100% {opacity: 1;} 
 	} 
     </style>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -55,6 +56,7 @@
 </head>
 
 <body>
+<div class="all" style="display: none;">
     <a id="icondata"></a>
     <h1 id="motd"><span style="color: #FFAA00">Glass</span><span style="color: #FFFFFF">MC</span></h1>
     <p id="status">Status: </p>
@@ -63,6 +65,39 @@
     <a id="pl3xmap" href="http://glassmc.69.mu:30548"><b>Map</b></a>
 
 <br><br><br>
+</div>
+    <div class="warning fade" id="warning">
+      <div class="warning-dialog">
+        <div class="warning-content">
+          <div class="warning-header">
+            <h4 class="warning-title">Explicit content warning </h4>
+          </div>
+          <div class="warning-body">
+            <p class="lead">Are you sure you want to continue?</p>
+          </div>
+          <div class="warning-footer">
+            <button type="button" class="btn btn-success continue" data-dismiss="modal">Sure</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+    $(document).ready(function() {
+
+      $(window).on('load', function() {
+        $('#warning').modal('show');
+      });
+
+      $('.continue').on('click', function() {
+        $('.warning').fadeOut();
+        $('.all').fadeIn();
+        $('.warning').css('display', 'none');
+
+      });
+
+    });
+  </script>
 
 </body>
 
