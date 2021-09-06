@@ -13,69 +13,24 @@
             color: #C6723A;
         }
         img {
-          animation: fade 3s infinite ease-in-out;
+          animation: fade 6s infinite ease-in-out;
         }
-	@keyframes fade {
-	   0% {opacity: 1;}
-	   50% {opacity: 0;} 
-       80% {opacity: 1;} 
-       100% {opacity: 1;} 
-	} 
+    @keyframes fade {
+       0% {opacity: 1;}
+       50% {opacity: 0;}
+       80% {opacity: 1;}
+       100% {opacity: 1;}
+    }
     </style>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        let url = "glassmc.69.mu:30010";
-        $(document).ready(() => {
-            $.getJSON("https://api.mcsrvstat.us/2/" + url, (status) => {
-                if (status.debug.ping) {
-                    $("#status").append("Online");
-                    $("#version").append(status.version);
-                    $("#software").append(status.software + " | ");
-                    $("#protocol").append(status.protocol + " @");
-                    $("#players_num").append(status.players.online + "/" + status.players.max)
-                    $.each(status.players.list, function (index, player) {
-                        $("#players_list").append(player + "<br>")
-                    });
-					var img = document.createElement("img");
-					img.src = status.icon;
-					var src = document.getElementById("icondata");
-					src.appendChild(img);
-                } else {
-                    $("#motd").append(status.hostname);
-                    $("#status").append("Offline");
-                    $("#version").hide();
-                    $("#software").hide();
-                    $("#players_num").hide();
-                    $("#players_list").hide();
-		    $("#pl3xmap").hide();
-                }
-                $("body").fadeIn(1000);
-            });
-        });
-    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<script>
-    $(document).ready(function() {
-      $(window).on('load', function() {
-        $('#warning').modal('show');
-      });
-
-      $('.continue').on('click', function() {
-        $('.warning').fadeOut();
-        $('.all').fadeIn();
-        $('.warning').css('display', 'none');
-
-      });
-
-    });
-  </script>
 <div class="all" style="display: none;">
     <a id="icondata"></a>
     <h1 id="motd"><span style="color: #FFAA00">Glass</span><span style="color: #FFFFFF">MC</span></h1>
     <p id="status">Status: </p>
     <p id="version"></a>  <a id="protocol">Protocol </a> <a id="software"></a></p>
-    <a id="players_list">Currently online: <br><a id="players_num"></a></a>    <br>
+    <a id="players_list">Currently online: <br><a id="players_num"></a></a><br>
     <a id="pl3xmap" href="http://glassmc.69.mu:30548/"><b>Map</b></a>
 
 <br><br><br>
@@ -96,6 +51,51 @@
         </div>
       </div>
     </div>
-</body>
 
+<script>
+    $(document).ready(function() {
+      $(window).on('load', function() {
+        $('#warning').modal('show');
+      });
+
+      $('.continue').on('click', function() {
+        $('.warning').fadeOut();
+        $('.all').fadeIn();
+        $('.warning').css('display', 'none');
+
+      });
+
+    });
+  </script>
+    <script>
+        let url = "glassmc.69.mu:30010";
+        $(document).ready(() => {
+            $.getJSON("https://api.mcsrvstat.us/2/" + url, (status) => {
+                if (status.debug.ping) {
+                    $("#status").append("Online");
+                    $("#version").append(status.version);
+                    $("#software").append(status.software + " | ");
+                    $("#protocol").append(status.protocol + " @");
+                    $("#players_num").append(status.players.online + "/" + status.players.max)
+                    $.each(status.players.list, function (index, player) {
+                        $("#players_list").append(player + "<br>")
+                    });
+                    var img = document.createElement("img");
+                    img.src = status.icon;
+                    var src = document.getElementById("icondata");
+                    src.appendChild(img);
+                } else {
+                    $("#motd").append(status.hostname);
+                    $("#status").append("Offline");
+                    $("#version").hide();
+                    $("#software").hide();
+                    $("#players_num").hide();
+                    $("#players_list").hide();
+            $("#pl3xmap").hide();
+                }
+                $("body").fadeIn(1000);
+            });
+        });
+    </script>
+</body>
 </html>
