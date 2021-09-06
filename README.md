@@ -1,5 +1,6 @@
 # Koutsie's Homepage (And lots of other stuff).
 
+![GitHub search hit counter](https://img.shields.io/github/search/koutsie/koutsie.github.io/%3Ccenter%3E)
 [![Hits-of-Code](https://hitsofcode.com/github/koutsie/koutsie.github.io)](https://hitsofcode.com/github/koutsie/koutsie.github.io/view)
 ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/koutsie.github.io?publish)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/koutsie/koutsie.github.io/master)
