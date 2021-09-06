@@ -5,9 +5,9 @@
     <title>GlassMC</title>
     <meta charset="utf-8">
     <style>
-        body {
-            font-family: monospace;
+        body, warning {
             background-color: #1E1E20;
+            font-family: monospace;
             display: none;
             text-align: center;
             color: #C6723A;
@@ -54,8 +54,22 @@
         });
     </script>
 </head>
-
 <body>
+<script>
+    $(document).ready(function() {
+      $(window).on('load', function() {
+        $('#warning').modal('show');
+      });
+
+      $('.continue').on('click', function() {
+        $('.warning').fadeOut();
+        $('.all').fadeIn();
+        $('.warning').css('display', 'none');
+
+      });
+
+    });
+  </script>
 <div class="all" style="display: none;">
     <a id="icondata"></a>
     <h1 id="motd"><span style="color: #FFAA00">Glass</span><span style="color: #FFFFFF">MC</span></h1>
@@ -82,24 +96,6 @@
         </div>
       </div>
     </div>
-
-<script>
-    $(document).ready(function() {
-
-      $(window).on('load', function() {
-        $('#warning').modal('show');
-      });
-
-      $('.continue').on('click', function() {
-        $('.warning').fadeOut();
-        $('.all').fadeIn();
-        $('.warning').css('display', 'none');
-
-      });
-
-    });
-  </script>
-
 </body>
 
 </html>
