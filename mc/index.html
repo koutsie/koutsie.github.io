@@ -14,22 +14,12 @@
             
         }
         img {
-          animation: rotation 8s infinite ease-in-out;
+          animation: fade 8s infinite ease-in-out;
         }
-        @keyframes rotation {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(359deg);
-          }
-        }
-        @keyframes rotation {
-          0%     { transform: rotate(0deg); }
-          5.51% { transform: rotate(0deg); }
-          75%   { transform: rotate(0deg); }
-          100%   { transform: rotate(-720deg); }
-        }
+	@keyframes fade {
+	   0% {opacity: 1;}
+	   100% {opacity: 0;} 
+	} 
     </style>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -73,8 +63,6 @@
     <a id="pl3xmap" href="http://glassmc.69.mu:30548"><b>Map</b></a>
 
 <br><br><br>
-
-<span style="color: #16161C">Map may contain sensitive material.</span>
 
 </body>
 
