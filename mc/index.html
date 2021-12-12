@@ -33,7 +33,7 @@
     <p id="status">Status: </p>
     <p id="version"></a>  <a id="protocol">Protocol </a> <a id="software"></a></p>
     <a id="players_list">Currently online: <br><a id="players_num"></a></a><br>
-    <a id="pl3xmap" href="http://glassmc.69.mu:30548/"><b>Map</b></a>
+    <!-- <a id="pl3xmap" href="http://glassmc.69.mu:30548/"><b>Map</b></a> -->
 
 <br><br><br>
     <iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://namemc.com/server/glassmc.69.mu:25575/embed" width="728" height="90"></iframe>
@@ -78,7 +78,7 @@ function fadein() {
     $("body").fadeIn(1000);
     }
 function fetch() {
-        let url = "glassmc.69.mu:30010";
+        let url = "glassmc.69.mu:25575";
             $.getJSON("https://api.mcsrvstat.us/2/" + url, (status) => {
                 if (status.debug.ping) {
                     $("#status").append=("Online");
